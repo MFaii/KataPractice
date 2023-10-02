@@ -15,11 +15,9 @@ function countPositivesSumNegatives(input) {
   }
   for (let num of input) {
     if (num > 0) {
-      pos = pos + num;
-      return pos;
+      pos++;
     } else if (num < 0) {
       neg = neg + num;
-      return neg;
     }
   }
   return [pos, neg];
